@@ -386,8 +386,19 @@ height: 850px;
     width: 30px;
 }
 
+}
 
-
+@media(min-width:1024px) and (max-width:1250px){
+.Element1 p{
+    display: none;
+}
+.STAR{
+    left: 130px;
+}
+.WEB{
+right: 130px;
+bottom: 300px;
+}
 
 
 
