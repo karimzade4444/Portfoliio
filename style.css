@@ -15,7 +15,7 @@ p{
 
 .Header{
 width: 100%;
-height: 130vh;
+height: 950px;
 background: linear-gradient(135deg, #5f0340, #3d177a, #7f0456);
 position: relative;
 }
@@ -167,7 +167,7 @@ animation: opacit 5s infinite ease-in-out;
 .STAR{
     width: 48px;
 position: absolute;
-left: 250px;
+left: 200px;
 top: 200px;
 animation: tops 4s infinite ease-in-out;
 }
@@ -189,7 +189,7 @@ animation: tops 4s infinite ease-in-out;
     width: 48px;
 position: absolute;
 right: 200px;
-bottom: 100px;
+bottom: 300px;
 animation: opac 4s infinite ease-in-out ;
 }
 .STARS{
@@ -210,7 +210,7 @@ gap: 10px;
 font-weight: bolder;
 font-size: 15px;
 letter-spacing: 1.5px;
-transition: 1.5s;
+transition: 0.5s;
 cursor: pointer;
 }
 .BUT2{
@@ -268,18 +268,25 @@ color: #f857a6;
         transform: translateY(0);
     }
 }
+.DOWNBOX{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
 
 .DOWN{
-    position: absolute;
     filter: invert(1);
     width: 42px;
-    bottom: 20px;
-    left: 745px;
     animation: to-top 2s infinite ease-in-out;
     cursor: pointer;
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
+.Header{
+height: 850px;
+}
+
 .Element2{
     display: none;
 }
@@ -294,5 +301,94 @@ color: #f857a6;
     justify-content: center;
     align-items: center;
 }
+
+.ME{
+    width: 250px;
+}
+.STAR{
+    left: 20px;
+    top: 120px;
+
+}
+.WEB{
+    right: 20px;
+    top: 350px;
+}
+.HBCenter h1{
+    font-size: 20px;
+}
+.FD{
+    font-size: 13px;
+}
+.HBCenter p{
+    font-size: 10px;
+}
+.Button{
+    width: 100%;
+}
+.BUT1{
+    font-size: 12px;
+    padding: 0 10px;
+}
+.BUT2{
+    font-size: 12px;
+    padding: 0 10px;
+}
+.Follow{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.f1{
+    width: 32px;
+}
+ .DOWN{
+ width: 28px;
+ padding-top: 0;
+ }
+
+}
+
+@media(min-width:768px) and (max-width:1023px){
+.Header{
+    height: 900px;
+}
+.CV{
+    display: none;
+}
+.Element2{
+    display: none;
+}
+
+.Element4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Element3{
+    padding-left: 20%;
+}
+.ME{
+    width: 250px;
+}
+.STAR{
+    left: 100px;
+}
+.WEB{
+    right: 100px;
+    top: 350px;
+}
+.Button{
+    
+}
+.DOWN{
+    width: 30px;
+}
+
+
+
+
+
 
 }
