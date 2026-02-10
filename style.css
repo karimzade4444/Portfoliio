@@ -38,6 +38,7 @@ position: relative;
 
 .Element1 p{
     text-shadow: 0 0 10px gray; 
+   
 }
 
 .Element2{
@@ -45,12 +46,29 @@ position: relative;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    
+}
+.E2{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.E2::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: -5px;
+width: 0%;
+height: 3px;
+background: linear-gradient(to right, #f857a6, #b055ff);
+transition: width 1s ease;
 }
 
-.Element2 p:hover{
-color: #3d177a;
-cursor: pointer;
-
+.E2:hover::after{
+    width: 100%;
+}
+.E2:hover{
+    color: #f857a6;
 }
 
 .Element3{
@@ -93,9 +111,11 @@ cursor: pointer;
     border: 0px;
     font-weight: bold;
      cursor: pointer;
+     transition: 0.5s;
 }
 .CV:hover{
     background: #5f0340;
+    transform: scale(1.2);
 }
 
 .HeaderBottom{
@@ -255,7 +275,11 @@ color: #f857a6;
     border-radius: 50px;
     box-shadow: 0 0 40px rgb(50, 50, 50);
     cursor: pointer;
-    width: 42px;
+    width: 32px;
+    transition: 0.5s;
+}
+.f1:hover{
+transform: scale(1.4);
 }
 @keyframes to-top {
     0% {
@@ -281,6 +305,135 @@ color: #f857a6;
     animation: to-top 2s infinite ease-in-out;
     cursor: pointer;
 }
+
+.Bottom{
+width: 80%;
+margin: auto;
+}
+
+.Title1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+    line-height: 1.6;
+}
+.Title1 p{
+    font-size: 20px;
+    color: rgb(0, 229, 255);
+    font-weight: 100;
+    text-shadow: 0 0 20px rgb(0, 229, 255);
+}
+.Title1 h1{
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 20px #f857a6;
+}
+.Title1 div{
+width: 120px;
+height: 3px;
+background: linear-gradient(to right, #f857a6, #b055ff);
+border-radius: 50px;
+box-shadow: 0 0 30px #f857a6 ;
+}
+
+.ABOUT{
+display: flex;
+margin-top: 60px;
+justify-content: space-between;
+
+}
+.Story{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 30px white;
+}
+
+
+
+.BIO{
+width: 500px;
+line-height: 1.6;
+
+}
+.BIO p{
+padding-top: 40px;
+font-weight: 200;
+color: rgba(255, 255, 255, 0.627);
+text-shadow: 0 0 30px gray;
+}
+
+
+.Education{
+    width: 550px;
+    height: 240px;
+    background: linear-gradient(135deg, #7f045656, #3d177a4e);
+    border-radius: 30px;
+    line-height: 2;
+    padding-top: 20px;
+    padding-left: 20px;
+border: 3px solid #5f0340;
+text-shadow: 0 0 30px #b055ff;
+}
+.Education h1{
+    color: white;
+    font-size: 25px;
+}
+.Education h3{
+color: white;
+font-size: 17px;
+font-weight: 200;
+letter-spacing: 1px;
+padding-top: 5px;
+}
+
+.Education h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.521);
+}
+.Education p{
+    padding-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.704);
+}
+
+.Experience{
+width: 550px;
+    height: 250px;
+    background: linear-gradient(135deg, #3d177a4e, #7f045656 );
+    border-radius: 30px;
+    line-height: 2;
+    padding-top: 20px;
+    padding-left: 20px;
+border: 3px solid purple;
+margin-top: 30px;
+text-shadow: 0 0 30px #b055ff;
+}
+.Experience h1{
+    color: white;
+    font-size: 25px;
+}
+.Experience h3{
+    color: rgb(227, 224, 224);
+    font-weight: 400;
+    letter-spacing: 1px;
+font-size: 17px;
+padding-top: 20px;
+}
+.Experience h5{
+    color: rgba(255, 255, 255, 0.332);
+    font-weight: 200;
+    letter-spacing: 1px;
+    
+}
+
 
 @media(max-width:767px){
 .Header{
@@ -379,9 +532,7 @@ height: 850px;
     right: 100px;
     top: 350px;
 }
-.Button{
-    
-}
+
 .DOWN{
     width: 30px;
 }
