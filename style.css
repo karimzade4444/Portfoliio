@@ -441,12 +441,14 @@ padding-top: 20px;
     margin-top: 50px;
     gap: 40px;
 }
+
 .skill{
 
     width: 80%;
     height: 8px;
     border-radius: 20px;
     background-color: gray;
+    box-shadow: 0 0 30px #f857a6;
 }
 .progress{
     width: 95%;
@@ -476,7 +478,98 @@ width: 100%;
 .p8{
     width: 100%;
 }
+.Project1{
+    width: 35%;
+    height: 600px;
+    background-color: #263649;
+    border-radius: 20px;
+    border: 3px solid #7f0456;
+    margin-top: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
 
+.Project1:hover{
+    transform: scale(1.1);
+    transform: translateY(-20px);
+}
+.Project1:hover h1{
+    color: #f857a6;
+}
+
+.IMG1{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 320px;
+    transition: transform 0.5s ease;
+box-shadow: inset 0 0 0 #7f0456;
+
+
+}
+.Project1::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: 243px;
+width: 100%;
+height: 0;
+background: linear-gradient(to top, #7f04566c, #7f045633, #5f034000);
+transition: height 0.5s ease;
+pointer-events: none;
+}
+
+.Project1:hover::after{
+    height: 100px;
+}
+
+
+.Project1:hover img{
+    transform: scale(1.2);
+}
+.Project1 h1{
+    color: white;
+    padding-left: 20px;
+    padding-top: 70px;
+    transition: 0.5s;
+}
+.Project1 p{
+    font-weight: 100;
+    padding-left: 20px;
+    padding-top: 20px;
+letter-spacing: 1px;
+    line-height: 1.8;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.622);
+}
+.LANG{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.LANG div{
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(to right, #7f04568e, #3d177a89);
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid #7f0456;
+    color: #f67bb6;
+    font-weight: 500;
+    
+}
+.MyProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
 
 @media(max-width:767px){
 .Header{
