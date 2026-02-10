@@ -434,6 +434,49 @@ padding-top: 20px;
     
 }
 
+.SKLKNOW{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+.skill{
+
+    width: 80%;
+    height: 8px;
+    border-radius: 20px;
+    background-color: gray;
+}
+.progress{
+    width: 95%;
+    height: 100%;
+    background: linear-gradient(to right, #f857a6, #b055ff);
+    border-radius: 20px;
+}
+
+.p2{
+    width: 80%;
+}
+.p3{
+    width: 10%;
+}
+.p4{
+    width: 60%;
+}
+.p5{
+    width: 85%;
+}
+.p6{
+    width: 100%;
+}
+.p7{
+width: 100%;
+}
+.p8{
+    width: 100%;
+}
+
 
 @media(max-width:767px){
 .Header{
