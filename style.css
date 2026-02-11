@@ -5,9 +5,8 @@ font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 100%;
-    
     background-color: #1f2a37;
-    
+    margin: auto;
 }
 p{
     color: white;
@@ -847,7 +846,77 @@ height: 850px;
  width: 28px;
  padding-top: 0;
  }
+ .ABOUT{
+    flex-wrap: wrap;
+    justify-content: center;
+    
+ }
+ .Education{
+    width: 100%;
+    margin-top: 20px;
+ }
+ .Education h3{
+    font-size: 15px;
+ }
+ .Education h5{
+    font-size: 12px;
+ }
+ .Experience{
+    width: 100%;
+ }
+ .Experience h3{
+    font-size: 15px;
+ }
+ .Experience h3{
+    font-size: 12px;
+    padding: 0;
+ }
 
+ .MyProject{
+    gap: 0;
+ }
+ 
+ .FInto{
+    width: 90%;
+    margin: auto;
+ }
+ .Contact{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .Mail{
+    width: 100%;
+ }
+.Mail h3{
+    font-size: 15px;
+}
+.ContactMe{
+    width: 100%;
+}
+.ContactMe input{
+width: 90%;
+}
+.Message{
+    width: 90%;
+}
+.ContactMe button{
+    width: 90%;
+}
+.Footer{
+    height: 1600px;
+}
+.w1{
+    left: 20px;
+    top: 30px;
+}
+.w2{
+    left: 300px;
+    top: 30px;
+}
+.w3{
+    display: none;
+}
 }
 
 @media(min-width:768px) and (max-width:1023px){
