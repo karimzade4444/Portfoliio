@@ -5,7 +5,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 100%;
-    height: 5000px;
+    
     background-color: #1f2a37;
     
 }
@@ -600,8 +600,160 @@ transform: scale(1.1);
 transform: translateY(-10px);
 background: #5f0340;
 }
+.Footer{
+    width: 100%;
+height: 1000px;
+background: linear-gradient(135deg, #7f0456, #3d177a,#1e5e008c );
+margin-top: 50px;
+position: relative;
+}
 
+.FInto{
+width: 80%;
+margin: auto;
 
+}
+.w1{
+    position: absolute;
+    right: 200px;
+    top: 120px;
+    animation: opac 4s infinite ease-in-out;
+}
+
+.w2{
+position: absolute;
+left: 200px;
+top: 200px;
+animation: opac 4s infinite ease-in-out;
+
+}
+
+.Mail{
+    width: 550px;
+    height: 100px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 20px;
+    border: 2px solid rgba(206, 206, 206, 0.534);
+    display: flex;
+gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.iconcontact{
+width: 60px;
+height: 60px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+margin-left: 20px;
+transition: 0.3s;
+}
+.Email{
+    line-height: 1.7;
+}
+.Email p{
+    color: rgba(255, 255, 255, 0.644);
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.Email h3{
+    color: white;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.Mail:hover{
+background-color: rgba(255, 255, 255, 0.373);
+}
+.Mail:hover .iconcontact{
+    transform: scale(1.1);
+}
+
+.info{
+ display: block;
+ height: 220px;
+ padding-left: 20px;
+ padding-top: 10px;
+ line-height: 2;
+}
+
+.info h2{
+    color: white;
+}
+
+.info p{
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.868);
+}
+
+.ContactMe{
+width: 550px;
+height: 700px;
+background-color: #1e2a38;
+border-radius: 20px;
+border: 2px solid #354b65b5;
+padding-left: 40px;
+padding-top: 30px;
+color: white;
+}
+
+.ContactMe p{
+    font-weight: 200;
+    padding-top: 40px;
+}
+.ContactMe input{
+    width: 450px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 3px solid #a0056c;
+    background-color: #2b3f57db;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.76);
+    letter-spacing: 1.5px;
+}
+
+.Message{
+  width: 450px;
+    height: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 3px solid #a0056c;
+    background-color: #2b3f57db; 
+    resize: none; 
+}
+.Message::placeholder{
+    color: rgba(255, 255, 255, 0.76);
+    letter-spacing: 1.5px;
+}
+.ContactMe button{
+    width: 450px;
+    height: 50px;
+    background: linear-gradient(to right, #f857a6, #b055ff);
+    border-radius: 20px;
+    margin-top: 40px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.ContactMe button:hover{
+    transform: scale(1.05);
+}
+.Contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 @media(max-width:767px){
